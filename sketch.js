@@ -10,11 +10,16 @@ var gameState = PLAY;
 
 var background, bgImg;
 var runner1, run1img, runner2, run2img;
+var cone, cone1, cone2, cone3, cone4, cone5;
 var keyCode;
 
 function preload()
 {
 	bgImg = loadImage("./assets/track.jpg");
+  run1img = loadImage("./assets/runner1.gif");
+  run2img = loadImage("./assets/runner2.gif");
+  cone1 = loadImage("./assets/cone.png");
+  
 }
 
 function setup() {
@@ -26,9 +31,21 @@ function setup() {
 
 	//Create the Bodies Here.
     runner1 = createSprite(50, 200, 20, 20);
-    
+    runner1.addImage(run1img);
 
 	runner2 = createSprite(50, 350, 20, 20);
+  runner2.addImage(run2img);
+  cone1 = createSprite(500, 100, 30, 30);
+  cone1.addImage(cone);
+
+  cone2 = createSprite(1000, 100, 30, 30);
+  cone2.addImage(cone);
+
+  cone3 = createSprite(1500, 100, 30, 30);
+  cone3.addImage(cone);
+
+  cone4 = createSprite(2000, 100, 30, 30);
+  cone4.addImage(cone);
   
 
 
